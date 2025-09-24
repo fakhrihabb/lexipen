@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LexiPen</title>
+		<link rel="stylesheet" href="styles/popup.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<span class="logo-icon">🖋️</span>
+				<span>LexiPen</span>
+			</div>
+			<div class="tagline">Your intelligent writing companion</div>
+		</div>
+
+		<div class="status-card">
+			<div class="status-item">
+				<span class="status-label">Privacy Status:</span>
+				<span class="status-value">🔒 100% Local</span>
+			</div>
+			<div class="status-item">
+				<span class="status-label">Words Sent Online:</span>
+				<span class="status-value">0</span>
+			</div>
+			<div class="status-item">
+				<span class="status-label">Active Website:</span>
+				<span class="status-value" id="active-sites">Detecting...</span>
+			</div>
+		</div>
+
+		<button class="test-button" id="test-detection">
+			🎯 Test Text Field Detection
+		</button>
+
+		<button class="test-button" id="test-ai">🧠 Test AI Availability</button>
+
+		<div class="test-result" id="result"></div>
+
+		<div class="footer">LexiPen v1.0 • Chrome Built-in AI Challenge 2025</div>
+
+		<script type="module" src="src/popup/popup-main.js"></script>
+	</body>
+</html>

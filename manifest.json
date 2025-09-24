@@ -12,13 +12,21 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "js": [
+        "src/shared/message-handler.js",
+        "src/ui/styles.js",
+        "src/ui/indicator-manager.js",
+        "src/ui/action-handlers.js",
+        "src/ui/overlay-manager.js",
+        "src/content/text-field-manager.js",
+        "src/content/content-main.js"
+      ],
       "run_at": "document_idle"
     }
   ],
   
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup/popup.html",
     "default_title": "LexiPen - Smart Writing Assistant"
   }
 }
